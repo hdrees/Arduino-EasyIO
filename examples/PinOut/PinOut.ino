@@ -8,6 +8,5 @@ void setup() {
 
 void loop() {
     Led.toggle();
-
     delay(500);
 }

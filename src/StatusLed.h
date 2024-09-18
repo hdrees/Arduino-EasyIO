@@ -6,13 +6,13 @@
 namespace EasyIO {
 	class StatusLed : private EasyIO::PinOut {
 		public:
-			StatusLed(byte pin, long onTime = 200, long offTime = 800);
+			StatusLed(byte pin, unsigned long onTime = 200, unsigned long offTime = 800);
 			void setup();
 			void update();
 
 		private:
-			long _onTime;
-			long _offTime;
+			unsigned long _onTime;
+			unsigned long _offTime;
 			unsigned long _previousMillis;
 	};
 };

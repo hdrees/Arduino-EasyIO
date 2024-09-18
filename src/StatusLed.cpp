@@ -1,6 +1,6 @@
 #include "StatusLed.h"
 
-EasyIO::StatusLed::StatusLed(byte pin, long onTime, long offTime) : PinOut(pin) {
+EasyIO::StatusLed::StatusLed(byte pin, unsigned long onTime, unsigned long offTime) : PinOut(pin) {
     _onTime         = onTime;
     _offTime        = offTime;
     _previousMillis = 0;
